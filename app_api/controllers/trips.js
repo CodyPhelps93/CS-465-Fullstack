@@ -44,6 +44,7 @@ const tripsFindByCode = async(req, res) => {
 // Regardless of outcome, response must include HTML status code
 // and JSON message to the requieting client
 const tripsAddTrip = async(req, res) => {
+    
     const newTrip = new Trip({
         code: req.body.code,
         name: req.body.name,
